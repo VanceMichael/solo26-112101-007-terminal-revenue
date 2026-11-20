@@ -86,6 +86,12 @@
             "R3"
           ]
         }
+      },
+      "GET /review/cases/WH-6": {
+        "status": 404,
+        "data": {
+          "message": "尚未发起核对"
+        }
       }
     },
     "cutover": {
@@ -511,6 +517,148 @@
         "data": {
           "reason": "区间原明细已超留存",
           "reference": "WH-6"
+        }
+      },
+      "POST /review/cases": {
+        "status": 202,
+        "data": {
+          "case": "WH-6",
+          "state": "received"
+        }
+      },
+      "GET /review/cases/WH-6": {
+        "data": {
+          "case": "WH-6",
+          "generation": "G-41",
+          "interval": [
+            124,
+            129
+          ],
+          "parts": [
+            {
+              "interval": [
+                124,
+                126
+              ],
+              "amountFen": 36420,
+              "state": "confirmed",
+              "receipt": "WH-6a"
+            },
+            {
+              "interval": [
+                127,
+                129
+              ],
+              "state": "unresolved",
+              "receipt": "WH-6b"
+            }
+          ]
+        }
+      }
+    },
+    "disputed": {
+      "GET /station/transfer": {
+        "data": [
+          {
+            "generation": "G-41",
+            "from": "R1",
+            "to": "R2",
+            "cut": 117,
+            "state": "confirmed"
+          },
+          {
+            "generation": "G-42",
+            "from": "R3",
+            "state": "single"
+          }
+        ]
+      },
+      "GET /books/catalog": {
+        "data": {
+          "asOf": 142,
+          "batches": [
+            {
+              "generation": "G-42",
+              "interval": [
+                100,
+                110
+              ],
+              "amountFen": 49500,
+              "kind": "subtotal",
+              "id": "SUM-5",
+              "provider": "station-book",
+              "currency": "CNY",
+              "url": "/books/SUM-5",
+              "sealed": true
+            },
+            {
+              "id": "DET-10",
+              "generation": "G-41",
+              "interval": [
+                124,
+                126
+              ],
+              "kind": "detail",
+              "url": "/books/DET-10",
+              "sealed": true
+            }
+          ]
+        }
+      },
+      "GET /books/DET-10": {
+        "data": {
+          "id": "DET-10",
+          "generation": "G-41",
+          "coverage": [
+            124,
+            126
+          ],
+          "rows": [
+            {
+              "n": 124,
+              "type": "sale",
+              "amountFen": 11890
+            },
+            {
+              "n": 125,
+              "type": "sale",
+              "amountFen": 12300
+            },
+            {
+              "n": 126,
+              "type": "sale",
+              "amountFen": 12710
+            }
+          ]
+        }
+      },
+      "GET /review/cases/WH-6": {
+        "data": {
+          "case": "WH-6",
+          "generation": "G-41",
+          "interval": [
+            124,
+            129
+          ],
+          "parts": [
+            {
+              "interval": [
+                124,
+                126
+              ],
+              "amountFen": 36420,
+              "state": "confirmed",
+              "receipt": "WH-6a"
+            },
+            {
+              "interval": [
+                127,
+                129
+              ],
+              "state": "unresolved",
+              "receipt": "WH-6b"
+            }
+          ]
         }
       }
     }

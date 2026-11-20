@@ -118,5 +118,53 @@
       ],
       "value": "WH-6"
     }
+  },
+  {
+    "path": "/review/cases",
+    "stage": "adjustment",
+    "method": "POST",
+    "status": 202,
+    "expected": {
+      "path": [
+        "case"
+      ],
+      "value": "WH-6"
+    },
+    "body": {
+      "generation": "G-41",
+      "interval": [
+        124,
+        129
+      ]
+    }
+  },
+  {
+    "path": "/review/cases/WH-6",
+    "stage": "adjustment",
+    "method": "GET",
+    "status": 200,
+    "expected": {
+      "path": [
+        "parts",
+        1,
+        "state"
+      ],
+      "value": "unresolved"
+    }
+  },
+  {
+    "path": "/books/DET-10",
+    "stage": "disputed",
+    "method": "GET",
+    "status": 200,
+    "expected": {
+      "path": [
+        "coverage"
+      ],
+      "value": [
+        124,
+        126
+      ]
+    }
   }
 ]

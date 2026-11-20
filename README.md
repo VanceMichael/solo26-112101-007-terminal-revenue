@@ -11,3 +11,7 @@
 `data/sources.json` 保存原始报文及站点页面。连续响应由来源按同一进程内的观察次数提供。阶段从 `initial` 启动，本地演练人员可用 `POST /scenario/阶段名` 切换，未覆盖的路由延用初始响应。切换不清空来源的请求记录。重开服务会复位。
 
 执行 `npm test` 核对来源契约。依赖锁仅包含 Node.js 标准库运行所需的项目清单。容器方式可先执行 `docker build -t terminal-revenue-sources .`，再执行 `docker run --rm terminal-revenue-sources`。镜像准备完成后的验证不需要外网。
+
+## 书面核对
+
+书面核对办接收 `POST /review/cases` ，内容为世代、号段以及导致缺细拆的来源编号。一次按号段收件， `/review/cases/WH-6` 给出 `confirmed`（金额已证实）或 `unresolved`（无法进一步确认）以及实际覆盖。金额仍以分为单位。若确认子段没有拆到具体凭据，仍按独立小计的证据能力理解。调阅办签名和终端具体凭据可以独立回查。
