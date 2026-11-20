@@ -1,0 +1,122 @@
+[
+  {
+    "path": "/books/SUM-4",
+    "stage": "initial",
+    "method": "GET",
+    "status": 200,
+    "expected": {
+      "path": [
+        "interval"
+      ],
+      "value": [
+        100,
+        129
+      ]
+    }
+  },
+  {
+    "path": "/books/SUM-5",
+    "stage": "initial",
+    "method": "GET",
+    "status": 200,
+    "expected": {
+      "path": [
+        "generation"
+      ],
+      "value": "G-42"
+    }
+  },
+  {
+    "path": "/station/transfer",
+    "stage": "initial",
+    "method": "GET",
+    "status": 200,
+    "expected": {
+      "path": [
+        0,
+        "stableThrough"
+      ],
+      "value": 113
+    }
+  },
+  {
+    "path": "/station/transfer",
+    "stage": "cutover",
+    "method": "GET",
+    "status": 200,
+    "expected": {
+      "path": [
+        0,
+        "state"
+      ],
+      "value": "confirmed"
+    }
+  },
+  {
+    "path": "/books/DET-7",
+    "stage": "cutover",
+    "method": "GET",
+    "status": 200,
+    "expected": {
+      "path": [
+        "replaces"
+      ],
+      "value": [
+        114,
+        123
+      ]
+    }
+  },
+  {
+    "path": "/books/DET-8",
+    "stage": "cutover",
+    "method": "GET",
+    "status": 425,
+    "expected": {
+      "path": [
+        "reason"
+      ],
+      "value": "细拆归档中"
+    }
+  },
+  {
+    "path": "/books/DET-7b",
+    "stage": "adjustment",
+    "method": "GET",
+    "status": 200,
+    "expected": {
+      "path": [
+        "rows",
+        10,
+        "target"
+      ],
+      "value": 116
+    }
+  },
+  {
+    "path": "/books/DET-8",
+    "stage": "adjustment",
+    "method": "GET",
+    "status": 200,
+    "expected": {
+      "path": [
+        "rows",
+        13,
+        "n"
+      ],
+      "value": 113
+    }
+  },
+  {
+    "path": "/books/DET-9",
+    "stage": "adjustment",
+    "method": "GET",
+    "status": 410,
+    "expected": {
+      "path": [
+        "reference"
+      ],
+      "value": "WH-6"
+    }
+  }
+]
