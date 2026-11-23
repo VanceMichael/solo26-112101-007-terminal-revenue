@@ -1,0 +1,13 @@
+{
+  "fetchedAt": "2026-11-23T03:42:21.152Z",
+  "body": {
+    "period": "2026-10",
+    "firstCutoff": 135,
+    "correctionCutoff": 149,
+    "stations": [
+      "R1",
+      "R2",
+      "R3"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "catalogEntry": {
+    "id": "DET-10",
+    "generation": "G-41",
+    "interval": [
+      124,
+      126
+    ],
+    "kind": "detail",
+    "url": "/books/DET-10",
+    "sealed": true
+  },
+  "fetchedAt": "2026-11-23T03:42:21.197Z",
+  "document": {
+    "id": "DET-10",
+    "generation": "G-41",
+    "coverage": [
+      124,
+      126
+    ],
+    "rows": [
+      {
+        "n": 124,
+        "type": "sale",
+        "amountFen": 11890
+      },
+      {
+        "n": 125,
+        "type": "sale",
+        "amountFen": 12300
+      },
+      {
+        "n": 126,
+        "type": "sale",
+        "amountFen": 12710
+      }
+    ]
+  },
+  "sha256": "132b08bb9555c6660ae943c2586a89240e40814bb8440e76f424d6fc1cea3e9b"
+}

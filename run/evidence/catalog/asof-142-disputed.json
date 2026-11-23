@@ -1,0 +1,35 @@
+{
+  "stage": "disputed",
+  "fetchedAt": "2026-11-23T03:42:21.195Z",
+  "body": {
+    "asOf": 142,
+    "batches": [
+      {
+        "generation": "G-42",
+        "interval": [
+          100,
+          110
+        ],
+        "amountFen": 49500,
+        "kind": "subtotal",
+        "id": "SUM-5",
+        "provider": "station-book",
+        "currency": "CNY",
+        "url": "/books/SUM-5",
+        "sealed": true
+      },
+      {
+        "id": "DET-10",
+        "generation": "G-41",
+        "interval": [
+          124,
+          126
+        ],
+        "kind": "detail",
+        "url": "/books/DET-10",
+        "sealed": true
+      }
+    ]
+  },
+  "sha256": "d4e0843a92e51880835598d9362d6fcdbee3ce87da18c087416d6dc7eab7b2ac"
+}

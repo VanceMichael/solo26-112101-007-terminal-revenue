@@ -1,0 +1,69 @@
+{
+  "stage": "adjustment",
+  "fetchedAt": "2026-11-23T03:42:21.181Z",
+  "body": {
+    "asOf": 138,
+    "batches": [
+      {
+        "generation": "G-42",
+        "interval": [
+          100,
+          110
+        ],
+        "amountFen": 49500,
+        "kind": "subtotal",
+        "id": "SUM-5",
+        "provider": "station-book",
+        "currency": "CNY",
+        "url": "/books/SUM-5",
+        "sealed": true
+      },
+      {
+        "id": "DET-7b",
+        "generation": "G-41",
+        "interval": [
+          114,
+          123
+        ],
+        "kind": "detail",
+        "url": "/books/DET-7b",
+        "replaces": [
+          114,
+          123
+        ],
+        "sealed": true
+      },
+      {
+        "id": "DET-8",
+        "generation": "G-41",
+        "interval": [
+          100,
+          113
+        ],
+        "kind": "detail",
+        "url": "/books/DET-8",
+        "replaces": [
+          100,
+          113
+        ],
+        "availableUntil": 139
+      },
+      {
+        "id": "DET-9",
+        "generation": "G-41",
+        "interval": [
+          124,
+          129
+        ],
+        "kind": "detail",
+        "url": "/books/DET-9",
+        "replaces": [
+          124,
+          129
+        ],
+        "availableUntil": 137
+      }
+    ]
+  },
+  "sha256": "75a2133dd9d609348f01a138121b21db4188e632671e0473d3fd187329d350a7"
+}

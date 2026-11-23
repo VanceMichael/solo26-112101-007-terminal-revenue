@@ -1,0 +1,96 @@
+{
+  "catalogEntry": {
+    "id": "DET-7b",
+    "generation": "G-41",
+    "interval": [
+      114,
+      123
+    ],
+    "kind": "detail",
+    "url": "/books/DET-7b",
+    "replaces": [
+      114,
+      123
+    ],
+    "sealed": true
+  },
+  "fetchedAt": "2026-11-23T03:42:21.184Z",
+  "document": {
+    "id": "DET-7b",
+    "generation": "G-41",
+    "coverage": [
+      114,
+      123
+    ],
+    "replaces": [
+      114,
+      123
+    ],
+    "rows": [
+      {
+        "n": 114,
+        "type": "sale",
+        "amountFen": 7790
+      },
+      {
+        "n": 115,
+        "type": "sale",
+        "amountFen": 8200
+      },
+      {
+        "n": 116,
+        "type": "sale",
+        "amountFen": 8610
+      },
+      {
+        "n": 117,
+        "type": "sale",
+        "amountFen": 9020
+      },
+      {
+        "n": 118,
+        "type": "sale",
+        "amountFen": 9430
+      },
+      {
+        "n": 119,
+        "type": "sale",
+        "amountFen": 9840
+      },
+      {
+        "n": 120,
+        "type": "sale",
+        "amountFen": 10250
+      },
+      {
+        "n": 121,
+        "type": "sale",
+        "amountFen": 10660
+      },
+      {
+        "n": 122,
+        "type": "sale",
+        "amountFen": 11070
+      },
+      {
+        "n": 123,
+        "type": "sale",
+        "amountFen": 11480
+      },
+      {
+        "n": 116,
+        "type": "void",
+        "statement": "C90",
+        "target": 116
+      },
+      {
+        "n": 117,
+        "type": "adjustment",
+        "statement": "C91",
+        "target": 117,
+        "amountFen": -300
+      }
+    ]
+  },
+  "sha256": "4df10bf23f4ac1847505c7084f78f7b260c43953d71b29f7511f3c17ea1967ae"
+}

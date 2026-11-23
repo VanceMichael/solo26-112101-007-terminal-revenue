@@ -1,0 +1,812 @@
+[
+  {
+    "seq": 0,
+    "at": "2026-11-23T03:42:21.141Z",
+    "method": "POST",
+    "path": "/scenario/initial",
+    "stage": "initial",
+    "status": 204,
+    "ms": 15,
+    "rawText": ""
+  },
+  {
+    "seq": 1,
+    "at": "2026-11-23T03:42:21.146Z",
+    "method": "GET",
+    "path": "/books/catalog",
+    "stage": "initial",
+    "status": 200,
+    "ms": 5,
+    "responseBody": {
+      "asOf": 130,
+      "batches": [
+        {
+          "id": "SUM-4",
+          "generation": "G-41",
+          "interval": [
+            100,
+            129
+          ],
+          "kind": "subtotal",
+          "url": "/books/SUM-4",
+          "sealed": true
+        },
+        {
+          "id": "SUM-5",
+          "generation": "G-42",
+          "interval": [
+            100,
+            110
+          ],
+          "kind": "subtotal",
+          "url": "/books/SUM-5",
+          "sealed": true
+        }
+      ]
+    }
+  },
+  {
+    "seq": 2,
+    "at": "2026-11-23T03:42:21.149Z",
+    "method": "GET",
+    "path": "/station/transfer",
+    "stage": "initial",
+    "status": 200,
+    "ms": 2,
+    "responseBody": [
+      {
+        "generation": "G-41",
+        "from": "R1",
+        "to": "R2",
+        "cut": 117,
+        "state": "proposed",
+        "stableThrough": 113
+      },
+      {
+        "generation": "G-42",
+        "from": "R3",
+        "state": "single"
+      }
+    ]
+  },
+  {
+    "seq": 3,
+    "at": "2026-11-23T03:42:21.152Z",
+    "method": "GET",
+    "path": "/desk/windows",
+    "stage": "initial",
+    "status": 200,
+    "ms": 2,
+    "responseBody": {
+      "period": "2026-10",
+      "firstCutoff": 135,
+      "correctionCutoff": 149,
+      "stations": [
+        "R1",
+        "R2",
+        "R3"
+      ]
+    }
+  },
+  {
+    "seq": 4,
+    "at": "2026-11-23T03:42:21.154Z",
+    "method": "GET",
+    "path": "/books/SUM-4",
+    "stage": "initial",
+    "status": 200,
+    "ms": 2,
+    "responseBody": {
+      "generation": "G-41",
+      "interval": [
+        100,
+        129
+      ],
+      "amountFen": 182500,
+      "kind": "subtotal",
+      "id": "SUM-4",
+      "provider": "station-book",
+      "currency": "CNY"
+    }
+  },
+  {
+    "seq": 5,
+    "at": "2026-11-23T03:42:21.156Z",
+    "method": "GET",
+    "path": "/books/SUM-5",
+    "stage": "initial",
+    "status": 200,
+    "ms": 2,
+    "responseBody": {
+      "generation": "G-42",
+      "interval": [
+        100,
+        110
+      ],
+      "amountFen": 49500,
+      "kind": "subtotal",
+      "id": "SUM-5",
+      "provider": "station-book",
+      "currency": "CNY"
+    }
+  },
+  {
+    "seq": 6,
+    "at": "2026-11-23T03:42:21.158Z",
+    "method": "POST",
+    "path": "/scenario/cutover",
+    "stage": "cutover",
+    "status": 204,
+    "ms": 1,
+    "rawText": ""
+  },
+  {
+    "seq": 7,
+    "at": "2026-11-23T03:42:21.159Z",
+    "method": "GET",
+    "path": "/books/catalog",
+    "stage": "cutover",
+    "status": 200,
+    "ms": 1,
+    "responseBody": {
+      "asOf": 134,
+      "batches": [
+        {
+          "generation": "G-41",
+          "interval": [
+            100,
+            129
+          ],
+          "amountFen": 182500,
+          "kind": "subtotal",
+          "id": "SUM-4",
+          "provider": "station-book",
+          "currency": "CNY",
+          "url": "/books/SUM-4",
+          "sealed": true
+        },
+        {
+          "generation": "G-42",
+          "interval": [
+            100,
+            110
+          ],
+          "amountFen": 49500,
+          "kind": "subtotal",
+          "id": "SUM-5",
+          "provider": "station-book",
+          "currency": "CNY",
+          "url": "/books/SUM-5",
+          "sealed": true
+        },
+        {
+          "id": "DET-7",
+          "generation": "G-41",
+          "interval": [
+            114,
+            123
+          ],
+          "kind": "detail",
+          "url": "/books/DET-7",
+          "replaces": [
+            114,
+            123
+          ],
+          "sealed": true
+        },
+        {
+          "id": "DET-8",
+          "generation": "G-41",
+          "interval": [
+            100,
+            113
+          ],
+          "kind": "detail",
+          "url": "/books/DET-8",
+          "replaces": [
+            100,
+            113
+          ],
+          "availableUntil": 139
+        },
+        {
+          "id": "DET-9",
+          "generation": "G-41",
+          "interval": [
+            124,
+            129
+          ],
+          "kind": "detail",
+          "url": "/books/DET-9",
+          "replaces": [
+            124,
+            129
+          ],
+          "sealed": false
+        }
+      ]
+    }
+  },
+  {
+    "seq": 8,
+    "at": "2026-11-23T03:42:21.162Z",
+    "method": "GET",
+    "path": "/station/transfer",
+    "stage": "cutover",
+    "status": 200,
+    "ms": 2,
+    "responseBody": [
+      {
+        "generation": "G-41",
+        "from": "R1",
+        "to": "R2",
+        "cut": 117,
+        "state": "confirmed"
+      },
+      {
+        "generation": "G-42",
+        "from": "R3",
+        "state": "single"
+      }
+    ]
+  },
+  {
+    "seq": 9,
+    "at": "2026-11-23T03:42:21.164Z",
+    "method": "GET",
+    "path": "/books/DET-7",
+    "stage": "cutover",
+    "status": 200,
+    "ms": 1,
+    "responseBody": {
+      "id": "DET-7",
+      "generation": "G-41",
+      "coverage": [
+        114,
+        123
+      ],
+      "replaces": [
+        114,
+        123
+      ],
+      "rows": [
+        {
+          "n": 114,
+          "type": "sale",
+          "amountFen": 7790
+        },
+        {
+          "n": 115,
+          "type": "sale",
+          "amountFen": 8200
+        },
+        {
+          "n": 116,
+          "type": "sale",
+          "amountFen": 8610
+        },
+        {
+          "n": 117,
+          "type": "sale",
+          "amountFen": 9020
+        },
+        {
+          "n": 118,
+          "type": "sale",
+          "amountFen": 9430
+        },
+        {
+          "n": 119,
+          "type": "sale",
+          "amountFen": 9840
+        },
+        {
+          "n": 120,
+          "type": "sale",
+          "amountFen": 10250
+        },
+        {
+          "n": 121,
+          "type": "sale",
+          "amountFen": 10660
+        },
+        {
+          "n": 122,
+          "type": "sale",
+          "amountFen": 11070
+        },
+        {
+          "n": 123,
+          "type": "sale",
+          "amountFen": 11480
+        }
+      ]
+    }
+  },
+  {
+    "seq": 10,
+    "at": "2026-11-23T03:42:21.166Z",
+    "method": "GET",
+    "path": "/books/DET-8",
+    "stage": "cutover",
+    "status": 425,
+    "ms": 1,
+    "responseBody": {
+      "reason": "细拆归档中"
+    }
+  },
+  {
+    "seq": 11,
+    "at": "2026-11-23T03:42:21.167Z",
+    "method": "GET",
+    "path": "/books/DET-9",
+    "stage": "cutover",
+    "status": 404,
+    "ms": 1,
+    "responseBody": {
+      "message": "来源没有发布此资源"
+    }
+  },
+  {
+    "seq": 12,
+    "at": "2026-11-23T03:42:21.180Z",
+    "method": "POST",
+    "path": "/scenario/adjustment",
+    "stage": "adjustment",
+    "status": 204,
+    "ms": 1,
+    "rawText": ""
+  },
+  {
+    "seq": 13,
+    "at": "2026-11-23T03:42:21.181Z",
+    "method": "GET",
+    "path": "/books/catalog",
+    "stage": "adjustment",
+    "status": 200,
+    "ms": 1,
+    "responseBody": {
+      "asOf": 138,
+      "batches": [
+        {
+          "generation": "G-42",
+          "interval": [
+            100,
+            110
+          ],
+          "amountFen": 49500,
+          "kind": "subtotal",
+          "id": "SUM-5",
+          "provider": "station-book",
+          "currency": "CNY",
+          "url": "/books/SUM-5",
+          "sealed": true
+        },
+        {
+          "id": "DET-7b",
+          "generation": "G-41",
+          "interval": [
+            114,
+            123
+          ],
+          "kind": "detail",
+          "url": "/books/DET-7b",
+          "replaces": [
+            114,
+            123
+          ],
+          "sealed": true
+        },
+        {
+          "id": "DET-8",
+          "generation": "G-41",
+          "interval": [
+            100,
+            113
+          ],
+          "kind": "detail",
+          "url": "/books/DET-8",
+          "replaces": [
+            100,
+            113
+          ],
+          "availableUntil": 139
+        },
+        {
+          "id": "DET-9",
+          "generation": "G-41",
+          "interval": [
+            124,
+            129
+          ],
+          "kind": "detail",
+          "url": "/books/DET-9",
+          "replaces": [
+            124,
+            129
+          ],
+          "availableUntil": 137
+        }
+      ]
+    }
+  },
+  {
+    "seq": 14,
+    "at": "2026-11-23T03:42:21.182Z",
+    "method": "GET",
+    "path": "/station/transfer",
+    "stage": "adjustment",
+    "status": 200,
+    "ms": 1,
+    "responseBody": [
+      {
+        "generation": "G-41",
+        "from": "R1",
+        "to": "R2",
+        "cut": 117,
+        "state": "confirmed"
+      },
+      {
+        "generation": "G-42",
+        "from": "R3",
+        "state": "single"
+      }
+    ]
+  },
+  {
+    "seq": 15,
+    "at": "2026-11-23T03:42:21.184Z",
+    "method": "GET",
+    "path": "/books/DET-7b",
+    "stage": "adjustment",
+    "status": 200,
+    "ms": 1,
+    "responseBody": {
+      "id": "DET-7b",
+      "generation": "G-41",
+      "coverage": [
+        114,
+        123
+      ],
+      "replaces": [
+        114,
+        123
+      ],
+      "rows": [
+        {
+          "n": 114,
+          "type": "sale",
+          "amountFen": 7790
+        },
+        {
+          "n": 115,
+          "type": "sale",
+          "amountFen": 8200
+        },
+        {
+          "n": 116,
+          "type": "sale",
+          "amountFen": 8610
+        },
+        {
+          "n": 117,
+          "type": "sale",
+          "amountFen": 9020
+        },
+        {
+          "n": 118,
+          "type": "sale",
+          "amountFen": 9430
+        },
+        {
+          "n": 119,
+          "type": "sale",
+          "amountFen": 9840
+        },
+        {
+          "n": 120,
+          "type": "sale",
+          "amountFen": 10250
+        },
+        {
+          "n": 121,
+          "type": "sale",
+          "amountFen": 10660
+        },
+        {
+          "n": 122,
+          "type": "sale",
+          "amountFen": 11070
+        },
+        {
+          "n": 123,
+          "type": "sale",
+          "amountFen": 11480
+        },
+        {
+          "n": 116,
+          "type": "void",
+          "statement": "C90",
+          "target": 116
+        },
+        {
+          "n": 117,
+          "type": "adjustment",
+          "statement": "C91",
+          "target": 117,
+          "amountFen": -300
+        }
+      ]
+    }
+  },
+  {
+    "seq": 16,
+    "at": "2026-11-23T03:42:21.186Z",
+    "method": "GET",
+    "path": "/books/DET-8",
+    "stage": "adjustment",
+    "status": 200,
+    "ms": 1,
+    "responseBody": {
+      "id": "DET-8",
+      "generation": "G-41",
+      "coverage": [
+        100,
+        113
+      ],
+      "replaces": [
+        100,
+        113
+      ],
+      "rows": [
+        {
+          "n": 100,
+          "type": "sale",
+          "amountFen": 2050
+        },
+        {
+          "n": 101,
+          "type": "sale",
+          "amountFen": 2460
+        },
+        {
+          "n": 102,
+          "type": "sale",
+          "amountFen": 2870
+        },
+        {
+          "n": 103,
+          "type": "sale",
+          "amountFen": 3280
+        },
+        {
+          "n": 104,
+          "type": "sale",
+          "amountFen": 3690
+        },
+        {
+          "n": 105,
+          "type": "sale",
+          "amountFen": 4100
+        },
+        {
+          "n": 106,
+          "type": "sale",
+          "amountFen": 4510
+        },
+        {
+          "n": 107,
+          "type": "sale",
+          "amountFen": 4920
+        },
+        {
+          "n": 108,
+          "type": "sale",
+          "amountFen": 5330
+        },
+        {
+          "n": 109,
+          "type": "sale",
+          "amountFen": 5740
+        },
+        {
+          "n": 110,
+          "type": "sale",
+          "amountFen": 6150
+        },
+        {
+          "n": 111,
+          "type": "sale",
+          "amountFen": 6560
+        },
+        {
+          "n": 112,
+          "type": "sale",
+          "amountFen": 6970
+        },
+        {
+          "n": 113,
+          "type": "sale",
+          "amountFen": 7380
+        }
+      ]
+    }
+  },
+  {
+    "seq": 17,
+    "at": "2026-11-23T03:42:21.187Z",
+    "method": "GET",
+    "path": "/books/DET-9",
+    "stage": "adjustment",
+    "status": 410,
+    "ms": 1,
+    "responseBody": {
+      "reason": "区间原明细已超留存",
+      "reference": "WH-6"
+    }
+  },
+  {
+    "seq": 18,
+    "at": "2026-11-23T03:42:21.192Z",
+    "method": "POST",
+    "path": "/review/cases",
+    "stage": "adjustment",
+    "status": 202,
+    "ms": 4,
+    "requestBody": {
+      "generation": "G-41",
+      "interval": [
+        124,
+        129
+      ],
+      "reason": "区间原明细已超留存",
+      "source": "DET-9"
+    },
+    "responseBody": {
+      "case": "WH-6",
+      "state": "received"
+    }
+  },
+  {
+    "seq": 19,
+    "at": "2026-11-23T03:42:21.193Z",
+    "method": "GET",
+    "path": "/review/cases/WH-6",
+    "stage": "adjustment",
+    "status": 200,
+    "ms": 1,
+    "responseBody": {
+      "case": "WH-6",
+      "generation": "G-41",
+      "interval": [
+        124,
+        129
+      ],
+      "parts": [
+        {
+          "interval": [
+            124,
+            126
+          ],
+          "amountFen": 36420,
+          "state": "confirmed",
+          "receipt": "WH-6a"
+        },
+        {
+          "interval": [
+            127,
+            129
+          ],
+          "state": "unresolved",
+          "receipt": "WH-6b"
+        }
+      ]
+    }
+  },
+  {
+    "seq": 20,
+    "at": "2026-11-23T03:42:21.194Z",
+    "method": "POST",
+    "path": "/scenario/disputed",
+    "stage": "disputed",
+    "status": 204,
+    "ms": 0,
+    "rawText": ""
+  },
+  {
+    "seq": 21,
+    "at": "2026-11-23T03:42:21.195Z",
+    "method": "GET",
+    "path": "/books/catalog",
+    "stage": "disputed",
+    "status": 200,
+    "ms": 1,
+    "responseBody": {
+      "asOf": 142,
+      "batches": [
+        {
+          "generation": "G-42",
+          "interval": [
+            100,
+            110
+          ],
+          "amountFen": 49500,
+          "kind": "subtotal",
+          "id": "SUM-5",
+          "provider": "station-book",
+          "currency": "CNY",
+          "url": "/books/SUM-5",
+          "sealed": true
+        },
+        {
+          "id": "DET-10",
+          "generation": "G-41",
+          "interval": [
+            124,
+            126
+          ],
+          "kind": "detail",
+          "url": "/books/DET-10",
+          "sealed": true
+        }
+      ]
+    }
+  },
+  {
+    "seq": 22,
+    "at": "2026-11-23T03:42:21.196Z",
+    "method": "GET",
+    "path": "/station/transfer",
+    "stage": "disputed",
+    "status": 200,
+    "ms": 1,
+    "responseBody": [
+      {
+        "generation": "G-41",
+        "from": "R1",
+        "to": "R2",
+        "cut": 117,
+        "state": "confirmed"
+      },
+      {
+        "generation": "G-42",
+        "from": "R3",
+        "state": "single"
+      }
+    ]
+  },
+  {
+    "seq": 23,
+    "at": "2026-11-23T03:42:21.197Z",
+    "method": "GET",
+    "path": "/books/DET-10",
+    "stage": "disputed",
+    "status": 200,
+    "ms": 0,
+    "responseBody": {
+      "id": "DET-10",
+      "generation": "G-41",
+      "coverage": [
+        124,
+        126
+      ],
+      "rows": [
+        {
+          "n": 124,
+          "type": "sale",
+          "amountFen": 11890
+        },
+        {
+          "n": 125,
+          "type": "sale",
+          "amountFen": 12300
+        },
+        {
+          "n": 126,
+          "type": "sale",
+          "amountFen": 12710
+        }
+      ]
+    }
+  }
+]

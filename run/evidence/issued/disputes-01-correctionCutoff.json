@@ -1,0 +1,29 @@
+{
+  "viewType": "dispute-schedule",
+  "period": "2026-10",
+  "issuedAt": 149,
+  "rule": "确认渠道意见不一致时保留两个来源；正式金额只纳入有确定归属和分值的覆盖；无权比例分摊",
+  "disputes": [
+    {
+      "generation": "G-41",
+      "station": "R2",
+      "interval": [
+        124,
+        126
+      ],
+      "written": {
+        "caseId": "WH-6",
+        "receipt": "WH-6a",
+        "amountFen": 36420
+      },
+      "detail": {
+        "id": "DET-10",
+        "amountFen": 36900
+      },
+      "bookedFen": null,
+      "unbookedDeltaFen": 480,
+      "rule": "同一笔不得在报送端同时算作书面补认和新到明细补认",
+      "handling": "两个来源同时留痕，待监管人员裁定；裁定前差额不得入账，也不得按比例分摊"
+    }
+  ]
+}

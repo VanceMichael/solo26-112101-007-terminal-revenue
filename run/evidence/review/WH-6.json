@@ -1,0 +1,30 @@
+{
+  "fetchedAt": "2026-11-23T03:42:21.193Z",
+  "body": {
+    "case": "WH-6",
+    "generation": "G-41",
+    "interval": [
+      124,
+      129
+    ],
+    "parts": [
+      {
+        "interval": [
+          124,
+          126
+        ],
+        "amountFen": 36420,
+        "state": "confirmed",
+        "receipt": "WH-6a"
+      },
+      {
+        "interval": [
+          127,
+          129
+        ],
+        "state": "unresolved",
+        "receipt": "WH-6b"
+      }
+    ]
+  }
+}

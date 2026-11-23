@@ -1,0 +1,7 @@
+{
+  "viewType": "dispute-schedule",
+  "period": "2026-10",
+  "issuedAt": 135,
+  "rule": "确认渠道意见不一致时保留两个来源；正式金额只纳入有确定归属和分值的覆盖；无权比例分摊",
+  "disputes": []
+}

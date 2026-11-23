@@ -1,0 +1,27 @@
+{
+  "catalogEntry": {
+    "id": "SUM-4",
+    "generation": "G-41",
+    "interval": [
+      100,
+      129
+    ],
+    "kind": "subtotal",
+    "url": "/books/SUM-4",
+    "sealed": true
+  },
+  "fetchedAt": "2026-11-23T03:42:21.154Z",
+  "document": {
+    "generation": "G-41",
+    "interval": [
+      100,
+      129
+    ],
+    "amountFen": 182500,
+    "kind": "subtotal",
+    "id": "SUM-4",
+    "provider": "station-book",
+    "currency": "CNY"
+  },
+  "sha256": "ae2d8ea70efea026d99c71c423bc41b26c5331f1247a9510747291555e22075e"
+}

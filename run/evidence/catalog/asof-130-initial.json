@@ -1,0 +1,32 @@
+{
+  "stage": "initial",
+  "fetchedAt": "2026-11-23T03:42:21.146Z",
+  "body": {
+    "asOf": 130,
+    "batches": [
+      {
+        "id": "SUM-4",
+        "generation": "G-41",
+        "interval": [
+          100,
+          129
+        ],
+        "kind": "subtotal",
+        "url": "/books/SUM-4",
+        "sealed": true
+      },
+      {
+        "id": "SUM-5",
+        "generation": "G-42",
+        "interval": [
+          100,
+          110
+        ],
+        "kind": "subtotal",
+        "url": "/books/SUM-5",
+        "sealed": true
+      }
+    ]
+  },
+  "sha256": "b7d5837bcd41b0d2feb36d7dec7de3634e98f9ee9afb36d7d57880466ff21771"
+}

@@ -1,0 +1,18 @@
+{
+  "stage": "adjustment",
+  "fetchedAt": "2026-11-23T03:42:21.182Z",
+  "body": [
+    {
+      "generation": "G-41",
+      "from": "R1",
+      "to": "R2",
+      "cut": 117,
+      "state": "confirmed"
+    },
+    {
+      "generation": "G-42",
+      "from": "R3",
+      "state": "single"
+    }
+  ]
+}

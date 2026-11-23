@@ -1,0 +1,123 @@
+{
+  "reportType": "supplement",
+  "supplementSequence": 2,
+  "period": "2026-10",
+  "issuedAt": 149,
+  "linkedReportSequence": 1,
+  "linkedReportSha256": "3c9614ba66a962e24709713bbb0cc7add8bc52d5f2bd4371c7a987a1d622a3f5",
+  "scopeRule": "仅覆盖受影响网点和期间，不重发无关区间",
+  "entryKinds": [
+    "first-obtained",
+    "amount-correction",
+    "attribution-change"
+  ],
+  "entries": [
+    {
+      "kind": "first-obtained",
+      "generation": "G-41",
+      "station": "R1",
+      "interval": [
+        100,
+        113
+      ],
+      "intervalText": "[100, 113]",
+      "beforeFen": null,
+      "afterFen": 66010,
+      "deltaFen": 66010,
+      "evidenceKind": "detail",
+      "evidenceRefs": [
+        {
+          "kind": "subtotal",
+          "id": "SUM-4",
+          "interval": [
+            100,
+            129
+          ],
+          "sha256": "ae2d8ea70efea026d99c71c423bc41b26c5331f1247a9510747291555e22075e"
+        },
+        {
+          "kind": "detail",
+          "id": "DET-8",
+          "coverage": [
+            100,
+            113
+          ],
+          "sha256": "1ddef376ea238d6ae7fdf777ecc3ab43e821dc37a801dbb71b6afdceaf0d64e2"
+        }
+      ],
+      "note": "首次取得可定值覆盖"
+    },
+    {
+      "kind": "amount-correction",
+      "generation": "G-41",
+      "station": "R1",
+      "interval": [
+        114,
+        116
+      ],
+      "intervalText": "[114, 116]",
+      "beforeFen": 24600,
+      "afterFen": 15990,
+      "deltaFen": -8610,
+      "evidenceKind": "detail",
+      "evidenceRefs": [
+        {
+          "kind": "subtotal",
+          "id": "SUM-4",
+          "interval": [
+            100,
+            129
+          ],
+          "sha256": "ae2d8ea70efea026d99c71c423bc41b26c5331f1247a9510747291555e22075e"
+        },
+        {
+          "kind": "detail",
+          "id": "DET-7b",
+          "coverage": [
+            114,
+            123
+          ],
+          "sha256": "4df10bf23f4ac1847505c7084f78f7b260c43953d71b29f7511f3c17ea1967ae"
+        }
+      ],
+      "note": "替换报文重算后的实质差额"
+    },
+    {
+      "kind": "amount-correction",
+      "generation": "G-41",
+      "station": "R2",
+      "interval": [
+        117,
+        123
+      ],
+      "intervalText": "[117, 123]",
+      "beforeFen": 71750,
+      "afterFen": 71450,
+      "deltaFen": -300,
+      "evidenceKind": "detail",
+      "evidenceRefs": [
+        {
+          "kind": "subtotal",
+          "id": "SUM-4",
+          "interval": [
+            100,
+            129
+          ],
+          "sha256": "ae2d8ea70efea026d99c71c423bc41b26c5331f1247a9510747291555e22075e"
+        },
+        {
+          "kind": "detail",
+          "id": "DET-7b",
+          "coverage": [
+            114,
+            123
+          ],
+          "sha256": "4df10bf23f4ac1847505c7084f78f7b260c43953d71b29f7511f3c17ea1967ae"
+        }
+      ],
+      "note": "替换报文重算后的实质差额"
+    }
+  ],
+  "netDeltaFen": 57100,
+  "sha256": "b4999d3135b18b0e935903dcc6fe23d63e4ecda8289d2af4c710a70aff646102"
+}

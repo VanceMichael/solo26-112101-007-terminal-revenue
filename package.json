@@ -8,6 +8,7 @@
   },
   "scripts": {
     "sources": "node sources/server.mjs",
+    "simulate": "node src/cli.mjs simulate",
     "test": "node --test test/*.test.mjs"
   }
 }

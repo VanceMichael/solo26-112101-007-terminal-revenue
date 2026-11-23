@@ -1,0 +1,161 @@
+{
+  "requestCount": 20,
+  "callsByStage": {
+    "initial": 5,
+    "cutover": 5,
+    "adjustment": 7,
+    "disputed": 3
+  },
+  "timeline": [
+    {
+      "stage": "initial",
+      "issue": null,
+      "fetched": [
+        "SUM-4",
+        "SUM-5"
+      ],
+      "blocked": [],
+      "reviewRequests": [],
+      "reviewPolls": []
+    },
+    {
+      "stage": "cutover",
+      "issue": null,
+      "fetched": [
+        "DET-7"
+      ],
+      "blocked": [
+        {
+          "id": "DET-8",
+          "kind": "pending",
+          "status": null
+        },
+        {
+          "id": "DET-9",
+          "kind": "not-published",
+          "status": null
+        }
+      ],
+      "reviewRequests": [],
+      "reviewPolls": []
+    },
+    {
+      "stage": "cutoff-135",
+      "issue": "/workspace/run/evidence/issued/report-01-firstCutoff.json",
+      "fetched": [],
+      "blocked": [],
+      "reviewRequests": [],
+      "reviewPolls": []
+    },
+    {
+      "stage": "adjustment",
+      "issue": null,
+      "fetched": [
+        "DET-7b",
+        "DET-8"
+      ],
+      "blocked": [
+        {
+          "id": "DET-9",
+          "kind": "expired",
+          "status": null
+        }
+      ],
+      "reviewRequests": [
+        "WH-6"
+      ],
+      "reviewPolls": [
+        "WH-6"
+      ]
+    },
+    {
+      "stage": "disputed",
+      "issue": null,
+      "fetched": [
+        "DET-10"
+      ],
+      "blocked": [],
+      "reviewRequests": [],
+      "reviewPolls": []
+    },
+    {
+      "stage": "cutoff-149",
+      "issue": "/workspace/run/evidence/issued/supplement-02-linked-01.json",
+      "fetched": [],
+      "blocked": [],
+      "reviewRequests": [],
+      "reviewPolls": []
+    }
+  ],
+  "firstReport": {
+    "sequence": 1,
+    "totalFormalFen": 145850,
+    "formalFenByStation": {
+      "R1": 24600,
+      "R2": 71750,
+      "R3": 49500
+    },
+    "pendingSegmentCount": 2,
+    "disputeCount": 0,
+    "sha256": "3c9614ba66a962e24709713bbb0cc7add8bc52d5f2bd4371c7a987a1d622a3f5"
+  },
+  "correction": {
+    "supplement": "b4999d3135b18b0e935903dcc6fe23d63e4ecda8289d2af4c710a70aff646102",
+    "linkedReport": "3c9614ba66a962e24709713bbb0cc7add8bc52d5f2bd4371c7a987a1d622a3f5",
+    "entryKinds": [
+      {
+        "kind": "first-obtained",
+        "generation": "G-41",
+        "station": "R1",
+        "interval": [
+          100,
+          113
+        ],
+        "deltaFen": 66010
+      },
+      {
+        "kind": "amount-correction",
+        "generation": "G-41",
+        "station": "R1",
+        "interval": [
+          114,
+          116
+        ],
+        "deltaFen": -8610
+      },
+      {
+        "kind": "amount-correction",
+        "generation": "G-41",
+        "station": "R2",
+        "interval": [
+          117,
+          123
+        ],
+        "deltaFen": -300
+      }
+    ],
+    "netDeltaFen": 57100
+  },
+  "finalFormalFenByStation": {
+    "G-41": {
+      "R1": 82000,
+      "R2": 71450
+    },
+    "G-42": {
+      "R3": 49500
+    }
+  },
+  "finalDisputes": [
+    {
+      "generation": "G-41",
+      "interval": [
+        124,
+        126
+      ],
+      "bookedFen": null,
+      "unbookedDeltaFen": 480
+    }
+  ],
+  "handoffR2SegmentCount": 3,
+  "handoffR1SegmentCount": 2
+}

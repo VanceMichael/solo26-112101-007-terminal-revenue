@@ -1,0 +1,83 @@
+{
+  "catalogEntry": {
+    "id": "DET-7",
+    "generation": "G-41",
+    "interval": [
+      114,
+      123
+    ],
+    "kind": "detail",
+    "url": "/books/DET-7",
+    "replaces": [
+      114,
+      123
+    ],
+    "sealed": true
+  },
+  "fetchedAt": "2026-11-23T03:42:21.164Z",
+  "document": {
+    "id": "DET-7",
+    "generation": "G-41",
+    "coverage": [
+      114,
+      123
+    ],
+    "replaces": [
+      114,
+      123
+    ],
+    "rows": [
+      {
+        "n": 114,
+        "type": "sale",
+        "amountFen": 7790
+      },
+      {
+        "n": 115,
+        "type": "sale",
+        "amountFen": 8200
+      },
+      {
+        "n": 116,
+        "type": "sale",
+        "amountFen": 8610
+      },
+      {
+        "n": 117,
+        "type": "sale",
+        "amountFen": 9020
+      },
+      {
+        "n": 118,
+        "type": "sale",
+        "amountFen": 9430
+      },
+      {
+        "n": 119,
+        "type": "sale",
+        "amountFen": 9840
+      },
+      {
+        "n": 120,
+        "type": "sale",
+        "amountFen": 10250
+      },
+      {
+        "n": 121,
+        "type": "sale",
+        "amountFen": 10660
+      },
+      {
+        "n": 122,
+        "type": "sale",
+        "amountFen": 11070
+      },
+      {
+        "n": 123,
+        "type": "sale",
+        "amountFen": 11480
+      }
+    ]
+  },
+  "sha256": "1534b6d1f72adc8b7ba5632112ca588da6ec2b19dc000d7987870f32266d3d23"
+}

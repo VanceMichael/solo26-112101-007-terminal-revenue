@@ -1,0 +1,257 @@
+{
+  "reportType": "cutoff",
+  "reportSequence": 1,
+  "period": "2026-10",
+  "cutoffKind": "firstCutoff",
+  "cutoff": 135,
+  "issuedAt": 135,
+  "generatedFromCoverageAt": 135,
+  "stations": [
+    "R1",
+    "R2",
+    "R3"
+  ],
+  "summary": {
+    "totalFormalFen": 145850,
+    "formalFenByStation": {
+      "R1": 24600,
+      "R2": 71750,
+      "R3": 49500
+    },
+    "pendingSegmentCount": 2,
+    "disputeCount": 0
+  },
+  "formalEntries": [
+    {
+      "generation": "G-41",
+      "station": "R1",
+      "interval": [
+        114,
+        116
+      ],
+      "intervalText": "[114, 116]",
+      "amountFen": 24600,
+      "bookedFen": null,
+      "unbookedDeltaFen": null,
+      "status": "formal",
+      "statusText": "可计入正式金额",
+      "evidenceKind": "detail",
+      "evidenceText": "可核实原凭据（逐号明细，含同世代撤销/冲补净额）",
+      "stationReason": "confirmed：号 114 早于交接号 117",
+      "evidenceRefs": [
+        {
+          "kind": "subtotal",
+          "id": "SUM-4",
+          "interval": [
+            100,
+            129
+          ],
+          "sha256": "ae2d8ea70efea026d99c71c423bc41b26c5331f1247a9510747291555e22075e"
+        },
+        {
+          "kind": "detail",
+          "id": "DET-7",
+          "coverage": [
+            114,
+            123
+          ],
+          "sha256": "1534b6d1f72adc8b7ba5632112ca588da6ec2b19dc000d7987870f32266d3d23"
+        }
+      ],
+      "perNumberFen": {
+        "114": 7790,
+        "115": 8200,
+        "116": 8610
+      },
+      "note": ""
+    },
+    {
+      "generation": "G-41",
+      "station": "R2",
+      "interval": [
+        117,
+        123
+      ],
+      "intervalText": "[117, 123]",
+      "amountFen": 71750,
+      "bookedFen": null,
+      "unbookedDeltaFen": null,
+      "status": "formal",
+      "statusText": "可计入正式金额",
+      "evidenceKind": "detail",
+      "evidenceText": "可核实原凭据（逐号明细，含同世代撤销/冲补净额）",
+      "stationReason": "confirmed：号 117 不早于交接号 117",
+      "evidenceRefs": [
+        {
+          "kind": "subtotal",
+          "id": "SUM-4",
+          "interval": [
+            100,
+            129
+          ],
+          "sha256": "ae2d8ea70efea026d99c71c423bc41b26c5331f1247a9510747291555e22075e"
+        },
+        {
+          "kind": "detail",
+          "id": "DET-7",
+          "coverage": [
+            114,
+            123
+          ],
+          "sha256": "1534b6d1f72adc8b7ba5632112ca588da6ec2b19dc000d7987870f32266d3d23"
+        }
+      ],
+      "perNumberFen": {
+        "117": 9020,
+        "118": 9430,
+        "119": 9840,
+        "120": 10250,
+        "121": 10660,
+        "122": 11070,
+        "123": 11480
+      },
+      "note": ""
+    },
+    {
+      "generation": "G-42",
+      "station": "R3",
+      "interval": [
+        100,
+        110
+      ],
+      "intervalText": "[100, 110]",
+      "amountFen": 49500,
+      "bookedFen": null,
+      "unbookedDeltaFen": null,
+      "status": "formal",
+      "statusText": "可计入正式金额",
+      "evidenceKind": "subtotal",
+      "evidenceText": "封存小计证明（整段未分解）",
+      "stationReason": "single：终端未更换网点",
+      "evidenceRefs": [
+        {
+          "kind": "subtotal",
+          "id": "SUM-5",
+          "interval": [
+            100,
+            110
+          ],
+          "sha256": "03ab39f2c22c668df6ffe313491c3533e88617687da1a1ffb09cf1d54b12883c"
+        }
+      ],
+      "note": "整段由封存小计证明，无细拆"
+    }
+  ],
+  "pendingEntries": [
+    {
+      "generation": "G-41",
+      "station": "R1",
+      "interval": [
+        100,
+        113
+      ],
+      "intervalText": "[100, 113]",
+      "amountFen": null,
+      "bookedFen": null,
+      "unbookedDeltaFen": null,
+      "status": "pending-detail",
+      "statusText": "缺细拆待核",
+      "evidenceKind": "subtotal",
+      "evidenceText": "封存小计证明（整段未分解）",
+      "stationReason": "confirmed：号 100 早于交接号 117",
+      "evidenceRefs": [
+        {
+          "kind": "subtotal",
+          "id": "SUM-4",
+          "interval": [
+            100,
+            129
+          ],
+          "sha256": "ae2d8ea70efea026d99c71c423bc41b26c5331f1247a9510747291555e22075e"
+        }
+      ],
+      "note": "封存小计 [100, 129] 未分解，[100, 113] 的金额无法从中间拆出"
+    },
+    {
+      "generation": "G-41",
+      "station": "R2",
+      "interval": [
+        124,
+        129
+      ],
+      "intervalText": "[124, 129]",
+      "amountFen": null,
+      "bookedFen": null,
+      "unbookedDeltaFen": null,
+      "status": "pending-detail",
+      "statusText": "缺细拆待核",
+      "evidenceKind": "subtotal",
+      "evidenceText": "封存小计证明（整段未分解）",
+      "stationReason": "confirmed：号 124 不早于交接号 117",
+      "evidenceRefs": [
+        {
+          "kind": "subtotal",
+          "id": "SUM-4",
+          "interval": [
+            100,
+            129
+          ],
+          "sha256": "ae2d8ea70efea026d99c71c423bc41b26c5331f1247a9510747291555e22075e"
+        }
+      ],
+      "note": "封存小计 [100, 129] 未分解，[124, 129] 的金额无法从中间拆出"
+    }
+  ],
+  "disputes": [],
+  "subtotalCrossChecks": [
+    {
+      "generation": "G-41",
+      "id": "SUM-4",
+      "interval": [
+        100,
+        129
+      ],
+      "subtotalFen": 182500,
+      "sealed": true,
+      "fullyExplained": false,
+      "explainedFen": null,
+      "differenceFen": null,
+      "note": "区间内存在缺细拆或未决段，封存小计原样留存对照，不拆算差额",
+      "intervalText": "[100, 129]"
+    },
+    {
+      "generation": "G-42",
+      "id": "SUM-5",
+      "interval": [
+        100,
+        110
+      ],
+      "subtotalFen": 49500,
+      "sealed": true,
+      "fullyExplained": true,
+      "explainedFen": 49500,
+      "differenceFen": 0,
+      "note": "封存小计与当前覆盖逐段可核对",
+      "intervalText": "[100, 110]"
+    }
+  ],
+  "evidenceIntegrity": [
+    {
+      "kind": "detail",
+      "id": "DET-7",
+      "sha256": "1534b6d1f72adc8b7ba5632112ca588da6ec2b19dc000d7987870f32266d3d23"
+    },
+    {
+      "kind": "subtotal",
+      "id": "SUM-4",
+      "sha256": "ae2d8ea70efea026d99c71c423bc41b26c5331f1247a9510747291555e22075e"
+    },
+    {
+      "kind": "subtotal",
+      "id": "SUM-5",
+      "sha256": "03ab39f2c22c668df6ffe313491c3533e88617687da1a1ffb09cf1d54b12883c"
+    }
+  ],
+  "sha256": "3c9614ba66a962e24709713bbb0cc7add8bc52d5f2bd4371c7a987a1d622a3f5",
+  "priorReportSha256": null
+}
